@@ -59,7 +59,7 @@
             // deletePrice({ item: "Kobo Libra 2" }) // should return { item: "Kobo Libra 2", priceless: true }
 
             function deletePrice(obj) {
-              if (obj.hasOwnProperty("price")) {
+              if (obj.price !== undefined) {
                 delete obj.price;
               } else {
                 obj.priceless = true;
